@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Casa Universitária</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="menu-container">
+            <a href="index.html" class="brand">
+                <img src="assets/img/unnamed.jpg" alt="Logo" class="brand-icon">
+                <div class="brand-text">
+                    <span class="brand-sup">Sua Casa</span>
+                    <span class="brand-sub">universitária</span>
+                </div>
+            </a>
+
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link map-link">Mapa</a></li>
+                    <li><a href="pages/Login.html" class="nav-link btn-login">Entrar</a></li>
+                    <li><a href="#" class="nav-link btn-announce">Anunciar Imóvel</a></li>                
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+        <div class="hero">
+            <h1>Torne sua fase <span class="text-highlight">universitária</span> mais confortável</h1>
+        </div>
+            <form class="search-bar">
+                <span class="search-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </span>
+                <input type="text" placeholder="Busque por bairro, faculdade ou rua..." aria-label="Buscar imóveis">
+                <button type="submit">Buscar</button>
+            </form>
+
+
+        <div class="content-header">
+            <h2 class="section-title">Recém anunciados em Guarapuava</h2>
+            
+            <div class="filters-container">
+                <button class="filter">🎓 Faculdade <span class="arrow">▼</span></button>
+                <button class="filter">💰 Orçamento <span class="arrow">▼</span></button>
+                <button class="filter">🛋️ Mobilia <span class="arrow">▼</span></button>
+                <button class="filter outline">⚙️ Mais Filtros <span class="arrow">▼</span></button>
+            </div>
+        </div>
+
+        <div class="grid-container">
+            <div class="imoveis-grid">
+                
+                <a href="pages/Anuncio.html" class="card">
+                    <div class="card-img-box">
+                        <div class="card-tags">
+                            <span class="tag tag-purple">Mobiliado</span>
+                        </div>
+                        <div class="slider">
+                            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sala">
+                            <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Quarto">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="location-badge">📍 A 1,2km do CEDETEG</div>
+                        
+                        <div class="price-container">
+                            <div class="main-price">
+                                <span class="currency">R$</span>
+                                <span class="value">850</span>
+                            </div>
+                            <div class="price-details">
+                                <span class="label-aluguel">aluguel</span>
+                                <span class="label-extra">+ R$ 120 cond.</span>
+                            </div>
+                        </div>
+
+                        <h3 class="card-address">
+                            Rua Jucelino Kubitschek, 2999 - Bairro Boqueirão
+                        </h3>
+                        
+                        <div class="card-features">
+                            <span>🛏️ 1 Quarto</span>
+                            <span>📶 Internet</span>
+                            <span>💧 Água</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="card">
+                    <div class="card-img-box">
+                        <div class="slider">
+                            <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ape">
+                            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cozinha">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="location-badge">📍 A 800m do CEDETEG</div>
+                        
+                        <div class="price-container">
+                            <div class="main-price">
+                                <span class="currency">R$</span>
+                                <span class="value">1.200</span>
+                            </div>
+                            <div class="price-details">
+                                <span class="label-aluguel">aluguel</span>
+                            </div>
+                        </div>
+
+                        <h3 class="card-address">
+                            Rua das Flores, 666 - Bairro Santa Cruz
+                        </h3>
+                        
+                        <div class="card-features">
+                            <span>🛏️ 2 Quartos</span>
+                            <span>🚗 1 Vaga</span>
+                            <span>🐾 Aceita Pet</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="card">
+                    <div class="card-img-box">
+                        <div class="card-tags">
+                            <span class="tag tag-female">Apenas Meninas</span>
+                        </div>
+
+                        <div class="slider">
+                            <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="República">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="location-badge">📍 A 500m da UTFPR</div>
+                        
+                        <div class="price-container">
+                            <div class="main-price">
+                                <span class="currency">R$</span>
+                                <span class="value">450</span>
+                            </div>
+                            <div class="price-details">
+                                <span class="label-total">total</span>
+                            </div>
+                        </div>
+
+                        <h3 class="card-address">
+                            Av. Moacir Julio Silvestri, 100 - Centro
+                        </h3>
+                        
+                        <div class="card-features">
+                            <span>🛏️ Suíte</span>
+                            <span>📶 Internet 500mb</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="card">
+                    <div class="card-img-box">
+                        <div class="card-tags">
+                            <span class="tag tag-purple">Mobiliado</span>
+                        </div>
+                        <div class="slider">
+                            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sala">
+                            <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Quarto">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="location-badge">📍 A 1,2km do CEDETEG</div>
+                        
+                        <div class="price-container">
+                            <div class="main-price">
+                                <span class="currency">R$</span>
+                                <span class="value">850</span>
+                            </div>
+                            <div class="price-details">
+                                <span class="label-aluguel">aluguel</span>
+                                <span class="label-extra">+ R$ 120 cond.</span>
+                            </div>
+                        </div>
+
+                        <h3 class="card-address">
+                            Rua Jucelino Kubitschek, 2999 - Bairro Boqueirão
+                        </h3>
+                        
+                        <div class="card-features">
+                            <span>🛏️ 1 Quarto</span>
+                            <span>📶 Internet</span>
+                            <span>💧 Água</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="footer-action">
+            <a href="mapa.html" class="btn-outline-large">Ver todos no Mapa</a>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-text">
+                <div class="brand-footer-text">
+                    <span class="brand-sup">Sua Casa</span>
+                    <span class="brand-sub text-highlight">universitária</span>
+                </div>
+                <p class="footer-hero">A plataforma feita de estudante para estudante. Facilite aqui o seu caminho para sua jornada</p>
+            </div>
+
+            <div class="footer-coluns">
+
+                <div class="footer-colum">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Parceiros</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-colum">
+                    <h4>Segurança</h4>
+                    <ul>
+                        <li><a href="#">Políticas de privacidade</a></li>
+                        <li><a href="#">Termos de uso</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-colum">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#">Envie uma mensagem</a></li>
+                        <li><a href="#">Nosso contato</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

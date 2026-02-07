@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar com Telefone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="menu-container">
+            <a href="../index.html" class="brand-login">
+                <img src="../assets/img/unnamed.jpg" alt="Logo" class="brand-icon">
+                <div class="brand-text">
+                    <span class="brand-sup">Sua Casa</span>
+                    <span class="brand-sub">universitária</span>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <main class="auth-page">
+        <div class="auth-container">
+            
+            <div style="text-align: left; width: 100%;">
+                <a href="login.html" class="btn-back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    Voltar
+                </a>
+            </div>
+
+            <h2 style="margin-top: 10px;">Informe seu número</h2>
+            <p>Enviaremos um código SMS para confirmar sua identidade.</p>
+            
+            <form style="width: 100%; margin-top: 70px;">
+                
+                <div class="input-group">
+                    <label for="telefone">Celular com DDD</label>
+                    <input type="tel" id="telefone" placeholder="(00) 00000-0000" maxlength="15">
+                </div>
+
+                <button type="button" class="btn-send-code" onclick="alert('Código enviado!')">
+                    Enviar Código
+                </button>
+            </form>
+
+            <div class="auth-footer" style="margin-top: 30px;">
+                <p>Pode ficar tranquilo, não enviamos spam. <a href="#">Termos de Uso</a>.</p>
+            </div>
+        </div> 
+    </main>
+</body>
+</html>
+
