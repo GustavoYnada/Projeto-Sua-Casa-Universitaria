@@ -375,7 +375,7 @@
 /* Area do Anuncio */
 
 .property-page {
-    padding-bottom: 200px;
+    padding-bottom: 100px;
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -395,6 +395,7 @@
 }
 
 .gallery-grid {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr; 
     gap: 10px;
@@ -448,19 +449,236 @@
 
 .btn-more-photos {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
-    z-index: 2;
+    bottom: 15px;
+    right: 15px;
+    z-index: 10;
     background: white;
     padding: 8px 16px;
     border-radius: 8px;
     font-weight: 700;
     border: none;
     cursor: pointer;
-    transition: all 0.1s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
 .btn-more-photos:hover { 
     transform: scale(1.05); 
 }
 
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 2.2fr 1fr;
+    gap: 50px;
+}
+
+.distance {
+    border-top: 1px solid rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-main);
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding: 30px 0;
+}
+
+.address-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(/Front-end/Projeto-Sua-Casa-Universitaria/src/assets/img/map.png);
+    border: 1px solid rgba(0,0,0,0.05);
+    padding: 20px 0;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    font-size: 1em;
+}
+
+.address-card {
+    width: auto;
+    background-color: var(--pure-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 100px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 30px;
+}
+
+.address-card h3 { 
+    font-size: 1.2rem; 
+    margin-bottom: 5px; 
+}
+
+.btn-map-outline {
+    margin-top: 15px;
+    background: transparent;
+    border: 1px solid rgba(0,0,0,0.3);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-map-outline:hover { 
+    background: rgba(0,0,0,0.1); 
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 30px 0;
+    padding-top: 30px;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+.exclusive-badge {
+    background: #fce4ec;
+    color: #c2185b;
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    border: 2px dashed #f8bbd0;
+    margin: 20px 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 500;
+}
+.feature-item svg { color: var(--primary-color); }
+
+.description-text {
+    margin-top: 50px;
+    padding-top: 50px;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.description-text p {
+    margin-top: 20px;
+    padding: 0 10%;
+    line-height: 1.6;
+    color: var(--text-main);;
+}
+
+
+.sticky-sidebar {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.price-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+.price-header{
+    display: flex;
+    justify-content: center;
+}
+
+.price-label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+}
+
+.price-list {
+    margin: 30px 0;
+}
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: var(--text-main);
+}
+
+.price-total {
+    border-top: 2px solid #eee;
+    padding-top: 15px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.price-total span { 
+    font-weight: 900; 
+    font-size: 1.2em
+}
+
+.total-value { 
+    color: var(--text-main); 
+}
+
+.btn-contact-owner {
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 10px;
+    background: var(--primary-color);
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+.btn-contact-owner:hover { background: var(--shaded-orange); transform: translateY(-2px); }
+
+.secondary-actions {
+    display: flex;
+    gap: 10px;
+}
+.btn-secondary {
+    flex: 1;
+    display: flex; justify-content: center; gap: 8px; align-items: center;
+    background: #f5f5f5;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.btn-secondary:hover { background: #e0e0e0; }
+
+
+@media (max-width: 768px) {
+    .property-header {text-align: center;}
+    .content-wrapper, .gallery-grid {
+        grid-template-columns: 1fr; 
+        height: auto;
+    }
+    .gallery-grid { height: auto; }
+    .gallery-sub { display: none;}
+    .address-card { padding: 3% 10%; text-align: center;}
+    .sticky-sidebar { position: static; margin-top: 30px; }
+    .features-grid { grid-template-columns: repeat(2, 1fr); }
+    .price-card { padding: 50px 15%;}
+}
+
+@media (max-width: 425px){
+    .price-card { padding: 30px 5%;}    
+}
