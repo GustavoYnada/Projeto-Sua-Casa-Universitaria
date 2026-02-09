@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar no Mapa - Sua Casa Universitária</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+
+<body class="zero-padding">
+
+
+
+    <header class="navbar navbar-map-page">
+        <div id="menu-map" class="menu-container">
+            <a href="../index.html" class="brand">
+                <img src="../assets/img/unnamed.jpg" alt="Logo" class="brand-icon">
+                <div class="brand-text">
+                    <span class="brand-sup">Sua Casa</span>
+                    <span class="brand-sub">universitária</span>
+                </div>
+            </a>
+
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="pages/Map.html" class="nav-link map-link">Mapa</a></li>
+                    <li><a href="pages/Login.html" class="nav-link btn-login">Entrar</a></li>
+                    <li><a href="#" class="nav-link btn-announce">Anunciar Imóvel</a></li>                
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main class="split-layout"> 
+  
+        <section class="list-column">
+            
+            <div class="filter-header">
+                <div class="search-bar-container">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    <input type="text" placeholder="Qual faculdade ou bairro?">
+                </div>
+
+                <div class="filters-row">
+                    <button class="filter-btn">
+                        🎓 Faculdade
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <button class="filter-btn">
+                        💰 Orçamento
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <button class="filter-btn">
+                        🛋️ Mobiliado
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <button class="filter-btn">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+                        Mais Filtros
+                    </button>
+                </div>
+            </div>
+
+            <div class="results-count">
+                <p><strong>42 imóveis</strong> encontrados em Guarapuava</p>
+                <div class="sort-container">
+                    <span>Ordenar por</span>
+                    
+                    <div class="sort-dropdown">
+                        <button class="sort-selected">
+                            Melhores Resultados
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 9l6 6 6-6"/>
+                            </svg>
+                        </button>
+
+                        <div class="sort-options-list">
+                            <a href="#">Melhores Resultados</a>
+                            <a href="#">Menor Preço</a>
+                            <a href="#">Maior Preço</a>
+                            <a href="#">Mais Recentes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards-list">
+
+                <a href="property-details.html" class="map-card">
+                    <div class="map-card-img">
+                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80">
+                        <div class="card-tags-maps">
+                            <span class="tag">TERCERA</span>
+                        </div>
+                    </div>
+                    <div class="map-card-info">
+                        <h3>Apto Mobiliado Unicentro</h3>
+                        <p class="imovel-details">45m² • 1 Quarto • 1 Vaga</p>
+                        <div class="price-container">
+                            <div class="main-price">
+                                <span class="value map-card-price">R$ 850</span>
+                            </div>
+                            <div class="price-details">
+                                <span class="label-aluguel" style="color: #2C3E50; padding-bottom: 3px;">aluguel</span>
+                                <span class="label-extra">+ R$ 120 cond.</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="property-details.html" class="map-card">
+                    <div class="map-card-img">
+                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80">
+                        <div class="card-tags-maps">
+                            <span class="tag">TERCERA</span>
+                        </div>
+                    </div>
+                    <div class="map-card-info">
+                        <h3>Apto Mobiliado Unicentro</h3>
+                        <p class="imovel-details">45m² • 1 Quarto • 1 Vaga</p>
+                        <div class="price-container">
+                            <div class="main-price">
+                                <span class="value map-card-price">R$ 850</span>
+                            </div>
+                            <div class="price-details">
+                                <span class="label-aluguel" style="color: #2C3E50; padding-bottom: 3px;">aluguel</span>
+                                <span class="label-extra">+ R$ 120 cond.</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="property-details.html" class="map-card">
+                    <div class="map-card-img">
+                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80">
+                        <div class="card-tags-maps">
+                            <span class="tag">TERCERA</span>
+                        </div>
+                    </div>
+                    <div class="map-card-info">
+                        <h3>Apto Mobiliado Unicentro</h3>
+                        <p class="imovel-details">45m² • 1 Quarto • 1 Vaga</p>
+                        <div class="price-container">
+                            <div class="main-price">
+                                <span class="value map-card-price">R$ 850</span>
+                            </div>
+                            <div class="price-details">
+                                <span class="label-aluguel" style="color: #2C3E50; padding-bottom: 3px;">aluguel</span>
+                                <span class="label-extra">+ R$ 120 cond.</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="property-details.html" class="map-card">
+                    <div class="map-card-img">
+                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80">
+                        <div class="card-tags-maps">
+                            <span class="tag">TERCERA</span>
+                        </div>
+                    </div>
+                    <div class="map-card-info">
+                        <h3>Apto Mobiliado Unicentro</h3>
+                        <p class="imovel-details">45m² • 1 Quarto • 1 Vaga</p>
+                        <div class="price-container">
+                            <div class="main-price">
+                                <span class="value map-card-price">R$ 850</span>
+                            </div>
+                            <div class="price-details">
+                                <span class="label-aluguel" style="color: #2C3E50; padding-bottom: 3px;">aluguel</span>
+                                <span class="label-extra">+ R$ 120 cond.</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="pagination">
+                
+                <a href="#" class="page-link prev">
+                    <i class="ph ph-caret-left"></i>
+                </a>
+
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                
+                <span class="page-dots">...</span>
+                
+                <a href="#" class="page-link">8</a>
+
+                <a href="#" class="page-link next">
+                    <i class="ph ph-caret-right"></i>
+                </a>
+
+            </div>
+
+            <footer class="site-footer">
+                <div id="footer-aside" class="footer-container">
+                    <div class="footer-text">
+                        <div class="brand-footer-text brand-text">
+                            <span class="brand-sup">Sua Casa</span>
+                            <span class="brand-sub text-highlight">universitária</span>
+                        </div>
+                        <p>A plataforma feita de estudante para estudante. Facilite aqui o seu caminho para sua jornada</p>
+                    </div>
+
+                    <div class="footer-coluns">
+
+                        <div class="footer-colum">
+                            <h4>Institucional</h4>
+                            <ul>
+                                <li><a href="#">Parceiros</a></li>
+                                <li><a href="#">Sobre nós</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-colum">
+                            <h4>Segurança</h4>
+                            <ul>
+                                <li><a href="#">Termos de uso</a></li>
+                                <li><a href="#">Políticas de privacidade</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-colum">
+                            <h4>Suporte</h4>
+                            <ul>
+                                <li><a href="#">Nosso contato</a></li>
+                                <li><a href="#">Envie uma mensagem</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+
+        <aside class="map-column">
+            
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115408.17515560646!2d-51.55409026605086!3d-25.393435165842634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ef363a3a419877%3A0x6734c56784d2847d!2sGuarapuava%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+                    class="google-map-iframe" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                
+            </div>
+
+            <button class="btn-expand-map">
+                Ver mapa inteiro
+            </button>
+        </aside>
+
+    </main>
+
+</body>
+</html>

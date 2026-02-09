@@ -15,6 +15,8 @@
 
 <body>
 
+
+
     <header class="navbar">
         <div class="menu-container">
             <a href="index.html" class="brand">
@@ -27,7 +29,7 @@
 
             <nav>
                 <ul class="nav-list">
-                    <li><a href="#" class="nav-link map-link">Mapa</a></li>
+                    <li><a href="pages/Map.html" class="nav-link map-link">Mapa</a></li>
                     <li><a href="pages/Login.html" class="nav-link btn-login">Entrar</a></li>
                     <li><a href="#" class="nav-link btn-announce">Anunciar Imóvel</a></li>                
                 </ul>
@@ -35,18 +37,22 @@
         </div>
     </header>
 
+
+
     <main class="main-content">
-        
+    
         <div class="hero">
             <h1>Torne sua fase <span class="text-highlight">universitária</span> mais confortável</h1>
         </div>
-            <form class="search-bar">
+        <form class="search-bar">
+            <label for="InputHome"  class="search-area">
                 <span class="search-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                 </span>
-                <input type="text" placeholder="Busque por bairro, faculdade ou rua..." aria-label="Buscar imóveis">
+                <input id="InputHome" type="text" placeholder="Busque por bairro, faculdade ou rua..." aria-label="Buscar imóveis">
                 <button type="submit">Buscar</button>
-            </form>
+            </label>
+        </form>
 
 
         <div class="content-header">
@@ -56,11 +62,11 @@
                 <button class="filter">🎓 Faculdade <span class="arrow">▼</span></button>
                 <button class="filter">💰 Orçamento <span class="arrow">▼</span></button>
                 <button class="filter">🛋️ Mobilia <span class="arrow">▼</span></button>
-                <button class="filter outline">⚙️ Mais Filtros <span class="arrow">▼</span></button>
+                <button class="filter">⚙️ Mais Filtros <span class="arrow">▼</span></button>
             </div>
         </div>
 
-        <div class="grid-container">
+        <div class="grid-home-container">
             <div class="imoveis-grid">
                 
                 <a href="pages/Anuncio.html" class="card">
@@ -75,8 +81,11 @@
                     </div>
 
                     <div class="card-content">
-                        <div class="location-badge">📍 A 1,2km do CEDETEG</div>
-                        
+
+                        <div>
+                            📍 A 1,2km do CEDETEG
+                        </div>
+
                         <div class="price-container">
                             <div class="main-price">
                                 <span class="currency">R$</span>
@@ -91,7 +100,7 @@
                         <h3 class="card-address">
                             Rua Jucelino Kubitschek, 2999 - Bairro Boqueirão
                         </h3>
-                        
+
                         <div class="card-features">
                             <span>🛏️ 1 Quarto</span>
                             <span>📶 Internet</span>
@@ -172,6 +181,7 @@
                     <div class="card-img-box">
                         <div class="card-tags">
                             <span class="tag tag-purple">Mobiliado</span>
+                            <span class="tag tag-female">Apenas Meninas</span>
                         </div>
                         <div class="slider">
                             <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sala">
@@ -180,7 +190,7 @@
                     </div>
 
                     <div class="card-content">
-                        <div class="location-badge">📍 A 1,2km do CEDETEG</div>
+                        <div class="location-badge">📍 A 1200 metros do CEDETEG</div>
                         
                         <div class="price-container">
                             <div class="main-price">
@@ -208,7 +218,7 @@
             </div>
         </div>
 
-        <div class="footer-action">
+        <div class="more-card-btn">
             <a href="mapa.html" class="btn-outline-large">Ver todos no Mapa</a>
         </div>
 
@@ -217,11 +227,11 @@
     <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-text">
-                <div class="brand-footer-text">
+                <div class="brand-footer-text brand-text">
                     <span class="brand-sup">Sua Casa</span>
                     <span class="brand-sub text-highlight">universitária</span>
                 </div>
-                <p class="footer-hero">A plataforma feita de estudante para estudante. Facilite aqui o seu caminho para sua jornada</p>
+                <p>A plataforma feita de estudante para estudante. Facilite aqui o seu caminho para sua jornada</p>
             </div>
 
             <div class="footer-coluns">
