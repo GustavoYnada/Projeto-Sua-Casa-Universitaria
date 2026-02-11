@@ -231,11 +231,11 @@
 
 /*  #region ----- Login Page -----   */
     /* #region header */ 
-        .brand-login {
+        #brand-login {
             flex: 1;
             justify-content: center;
         }
-        .brand-login:hover { transform: scale(1.02); }
+        #brand-login:hover { transform: scale(1.02); }
     /* #endregion */
 
     .auth-page {
@@ -977,96 +977,113 @@
             display: none;
         }
     /* #endregion */
+
+    /* Login Page */
+    #brand-login {
+        display: flex;
+    }
 }
 
 @media (max-width: 458px) {
-    .hero {
-        width: 95%; 
-        max-width: 1200px; 
-        margin-bottom: 10px;
-    }
-    .hero h1 {
-        font-size: 1.6rem; 
-        margin-bottom: 0; 
-        line-height: 1.1;
-    }
+    /* #region Index Page */
+        .hero {
+            width: 95%; 
+            max-width: 1200px; 
+            margin-bottom: 10px;
+        }
+        .hero h1 {
+            font-size: 1.6rem; 
+            margin-bottom: 0; 
+            line-height: 1.1;
+        }
 
-    .search-bar {
-        width: 85%;
-    }
+        .search-bar {
+            width: 85%;
+        }
 
-    .search-bar .search-icon { 
-        padding: 0 7px; 
-    }
-    .search-bar .search-icon svg { width: 15px; height: 15px; }
+        .search-bar .search-icon { 
+            padding: 0 7px; 
+        }
+        .search-bar .search-icon svg { width: 15px; height: 15px; }
 
-    .content-header {
-        padding: 0 10px; margin: 30px 0;
-        display: flex; flex-direction: column; 
-        align-items: center; gap: 20px;
-    }
+        .content-header {
+            padding: 0 10px; margin: 30px 0;
+            display: flex; flex-direction: column; 
+            align-items: center; gap: 20px;
+        }
 
-    .section-title {
-        font-size: 1.2rem;
-    }
-    .filters-container .filter {
-        padding: 8px 10px; 
-        width: 130px;
-    }
-    .price-card { padding: 30px 5%; } 
-    
+        .section-title {
+            font-size: 1.2rem;
+        }
+        .filters-container .filter {
+            padding: 8px 10px; 
+            width: 130px;
+        }
+        .price-card { padding: 30px 5%; } 
+    /* #endregion */
 
-    /* announce page */
-    .property-page{
-        margin: auto;
-    }
-    .property-header h1 { 
-        font-size: 1.4rem;}
-    .gallery-container {
-        width: auto;
-        height: 50vw;
-        min-height: 220px;
-        max-height: 310px;
-        min-width: 288px;
-        padding: 0;
-        margin-bottom: 10px;
-    }
+    /* #region announce page */
+        .property-page{
+            margin: auto;
+        }
+        .property-header h1 { 
+            font-size: 1.4rem;}
+        .gallery-container {
+            width: auto;
+            height: 50vw;
+            min-height: 220px;
+            max-height: 310px;
+            min-width: 288px;
+            padding: 0;
+            margin-bottom: 10px;
+        }
 
-    .gallery-container .main-image {
-        height: 50vw; 
-        min-height: 220px;
-        max-height: 310px;
-        min-width: 280px;
-    }
+        .gallery-container .main-image {
+            height: 50vw; 
+            min-height: 220px;
+            max-height: 310px;
+            min-width: 280px;
+        }
 
-    .address-card {
-        max-width: 260px;
-        background-color: var(--pure-white);
-    }
-    .address-card h3 { font-size: 1rem; margin-bottom: 5px; }
-    .address-card p { font-size: 0.85rem;}
-    .btn-map-outline {margin-top: 5px;}
+        .address-card {
+            max-width: 260px;
+            background-color: var(--pure-white);
+        }
+        .address-card h3 { font-size: 1rem; margin-bottom: 5px; }
+        .address-card p { font-size: 0.85rem;}
+        .btn-map-outline {margin-top: 5px;}
 
-    .price-sidebar-btns {
-        align-items: center;
-    }
-    .mobile-btns-secondary{
-        display: flex;
-        flex-direction: column;
-    }
+        .price-sidebar-btns {
+            align-items: center;
+        }
+        .mobile-btns-secondary{
+            display: flex;
+            flex-direction: column;
+        }
 
-    .btn-secondary {
-        border: none;
-        background: none;
-        flex: 1;
-        gap: 0;
-        max-height: 30px;
-        max-width: 30px;
-        padding: 3px;
-    }
+        .btn-secondary {
+            border: none;
+            background: none;
+            flex: 1;
+            gap: 0;
+            max-height: 30px;
+            max-width: 30px;
+            padding: 3px;
+        }
 
-    .btn-contact-owner {
-        max-height: 70px;
-    }
+        .btn-contact-owner {
+            max-height: 70px;
+        }
+    /* #endregion */
 
+    /* Login Page */
+    .auth-container {
+        font-size: 0.95rem;
+        padding: 15px;
+        width: 95%;
+    }
+    .auth-container p {
+        margin-bottom: 20px;
+    }
+    .auth-footer { margin-top: 50px; }
 }
